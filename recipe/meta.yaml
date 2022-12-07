@@ -40,10 +40,6 @@ requirements:
 test:
   imports:
     - bw2io
-  requires:
-    - pip
-  commands:
-    - pip check
 
 about:
   home: https://github.com/brightway-lca/brightway2-io
