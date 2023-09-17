@@ -1,11 +1,11 @@
-About bw2io
-===========
+About bw2io-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bw2io-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/brightway-lca/brightway2-io
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bw2io-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for importing and export life cycle inventory databases
 
@@ -145,5 +145,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@cmutel](https://github.com/cmutel/)
 * [@m-rossi](https://github.com/m-rossi/)
+* [@michaelweinold](https://github.com/michaelweinold/)
 
