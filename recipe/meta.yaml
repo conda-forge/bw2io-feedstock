@@ -25,13 +25,14 @@ requirements:
     - bw2data >=3.5.1
     - lxml
     - mrio_common_metadata
-    - numpy
+    - numpy =1.23
     - openpyxl
     - psutil
     - pyprind
     - python >=3.6
     - scipy
     - stats_arrays
+    - tqdm
     - unidecode
     - voluptuous
     - xlrd
