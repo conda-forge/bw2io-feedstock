@@ -1,5 +1,5 @@
 {% set name = "bw2io" %}
-{% set version = "0.8.8" %}
+{% set version = "0.8.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d4edfc56c76c236717e748562de143912ada22aae64496d900f464b837fc7a1e
+  sha256: 2ad12a69188a2309ee37d9d6c22a9fea28a57339da79545c4193c92d5aa37c28
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -20,18 +20,19 @@ requirements:
     - python >=3.6
     - setuptools
   run:
-    - bw_migrations
+    - python >=3.6
     - bw2calc >=1.7.4
     - bw2data >=3.5.1
+    - bw_migrations
     - lxml
     - mrio_common_metadata
-    - numpy
+    - numpy==1.23
     - openpyxl
     - psutil
     - pyprind
-    - python >=3.6
     - scipy
     - stats_arrays
+    - tqdm
     - unidecode
     - voluptuous
     - xlrd
