@@ -26,7 +26,7 @@ requirements:
     - bw_migrations
     - lxml
     - mrio_common_metadata
-    - numpy==1.23
+    - numpy ==1.23
     - openpyxl
     - psutil
     - pyprind
