@@ -28,7 +28,7 @@ requirements:
     - bw_processing >=0.8.5
     - lxml
     - mrio_common_metadata
-    - multifunctional>=0.5
+    - multifunctional >=0.5
     - numpy
     - openpyxl
     - platformdirs
