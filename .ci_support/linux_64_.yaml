@@ -1,5 +1,5 @@
 cdt_name:
-- cos6
+- cos7
 channel_sources:
 - conda-forge/label/bw2calc_dev,conda-forge
 - conda-forge/label/bw2data_dev,conda-forge
