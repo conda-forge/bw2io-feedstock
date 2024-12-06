@@ -20,19 +20,25 @@ requirements:
     - python >=3.6
     - setuptools
   run:
-    - bw_migrations
-    - bw2calc >=1.7.4,<2
-    - bw2data >=3.5.1,<4
-    - ecoinvent_interface
+    - bw_migrations >=0.2
+    - bw_processing >=1.0
+    - bw2calc >=2.0
+    - bw2data >=4.3
+    - bw2parameters >=1.1.0
     - lxml
     - mrio_common_metadata
-    - numpy
+    - numpy <2
     - openpyxl
-    - psutil
-    - pyprind
-    - python >=3.6
+    - platformdirs
+    - pydantic
+    - pyecospold
+    - python
+    - randonneur >=0.6
+    - randonneur_data >=0.5.4
+    - requests
     - scipy
-    - stats_arrays
+    - sparqlwrapper
+    - stats_arrays >=0.6.5
     - tqdm
     - unidecode
     - voluptuous
