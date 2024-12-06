@@ -1,13 +1,13 @@
 {% set name = "bw2io" %}
-{% set version = "0.8.12" %}
+{% set version = "0.9.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 410fdac7d3a4273750861cc65166b026813e23dfa0ee59c77a8a412ea1dbbaea
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 25d40d474eb5a9d7577bb8c3e60ab748954d4c36b3765b2446f7e6db1d4f5dda
 
 build:
   noarch: python
@@ -17,22 +17,28 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
-    - bw_migrations
-    - bw2calc >=1.7.4,<2
-    - bw2data >=3.5.1,<4
-    - ecoinvent_interface
+    - bw_migrations >=0.2
+    - bw_processing >=1.0
+    - bw2calc >=2.0
+    - bw2data >=4.3
+    - bw2parameters >=1.1.0
     - lxml
     - mrio_common_metadata
-    - numpy
+    - numpy <2
     - openpyxl
-    - psutil
-    - pyprind
-    - python >=3.6
+    - platformdirs
+    - pydantic
+    - pyecospold
+    - python >={{ python_min }}
+    - randonneur >=0.6
+    - randonneur_data >=0.5.4
+    - requests
     - scipy
-    - stats_arrays
+    - sparqlwrapper
+    - stats_arrays >=0.6.5
     - tqdm
     - unidecode
     - voluptuous
@@ -42,6 +48,8 @@ requirements:
 test:
   imports:
     - bw2io
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/brightway-lca/brightway2-io
