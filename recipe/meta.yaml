@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
     - bw_migrations >=0.2
@@ -32,7 +32,7 @@ requirements:
     - platformdirs
     - pydantic
     - pyecospold
-    - python
+    - python >={{ python_min }}
     - randonneur >=0.6
     - randonneur_data >=0.5.4
     - requests
@@ -48,6 +48,8 @@ requirements:
 test:
   imports:
     - bw2io
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/brightway-lca/brightway2-io
