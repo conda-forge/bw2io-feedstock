@@ -1,5 +1,5 @@
 {% set name = "bw2io" %}
-{% set version = "0.9.8" %}
+{% set version = "0.9.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c415deb54713485f8afabcf300db2a0159b21d3520f27f7180350f8421c8a4ae
+  sha256: 94edb0b07fc3b1d60f37d68710fa3229e17a70cb68e665f5dc35cb53b6179980
 
 build:
   noarch: python
@@ -40,7 +40,6 @@ requirements:
     - sparqlwrapper
     - stats_arrays >=0.6.5
     - tqdm
-    - unidecode
     - voluptuous
     - xlrd
     - xlsxwriter
