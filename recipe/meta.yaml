@@ -1,5 +1,5 @@
 {% set name = "bw2io" %}
-{% set version = "0.9.9" %}
+{% set version = "0.9.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 94edb0b07fc3b1d60f37d68710fa3229e17a70cb68e665f5dc35cb53b6179980
+  sha256: 567e96d7539016b119888e17750cb42f066f4e6ce76706d3c641900b5a7fe6a8
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - bw2parameters >=1.1.0
     - lxml
     - mrio_common_metadata
-    - numpy <2
+    - numpy <3
     - openpyxl
     - platformdirs
     - pydantic
