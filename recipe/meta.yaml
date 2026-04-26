@@ -23,7 +23,7 @@ requirements:
     - bw_migrations >=0.2
     - bw_processing >=1.0
     - bw2calc >=2.0
-    - bw2data >=4.3
+    - bw2data >=4.6.2
     - bw2parameters >=1.1.0
     - lxml
     - mrio_common_metadata
