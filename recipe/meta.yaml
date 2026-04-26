@@ -1,5 +1,5 @@
 {% set name = "bw2io" %}
-{% set version = "0.9.16" %}
+{% set version = "0.9.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a84ff89ee6743d44f85ee83587848849799c1bc7302486836f7d81fd5fae1e68
+  sha256: 1aa66ad9eada0baeee3a0b08a548e84ef79f41248d245deaa8a1ab6ca038a4e6
 
 build:
   noarch: python
